@@ -1,16 +1,14 @@
 require 'bcrypt'
 class Bcrypt
 	
-	attr_reader :password
 	include BCrypt
-	def encriptar(password)	
-		@password=Password.create(password)
+	def encriptar(password)
 	end
 
 	def validar_con(usuario, password)
 		usuarioValido = "Juan"
-
-		if usuario == usuarioValido && (@password == password)
+		passwordValido=Password.create("Juan123")
+		if usuario == usuarioValido && (passwordValido == password)
 			return true
 		else
 			return false

@@ -1,0 +1,10 @@
+require_relative '../caesar'
+
+describe Caesar do
+
+	describe "initialize" do
+		it 'initialized with default text' do
+			expect(Caesar.new.desencriptar).to be(pmñ)
+		end
+	end
+end

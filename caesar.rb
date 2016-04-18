@@ -1,7 +1,5 @@
 class Caesar
 
-	attr_reader :password
-
 	def initialize
 		@alfabeto = 'abcdefghijklmnñopqrstuvwxyz0123456789ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'
 	end
